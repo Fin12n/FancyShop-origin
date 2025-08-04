@@ -1,0 +1,108 @@
+# =================================================================
+# FancyShop Enhanced Multi-Item - Messages Configuration
+# =================================================================
+
+messages:
+  # Lệnh & Quyền
+  only-players: "&cChỉ người chơi mới có thể sử dụng lệnh này!"
+  no-permission: "&cBạn không có quyền sử dụng lệnh này!"
+  unknown-command: "&cLệnh không tồn tại! Sử dụng /fs để xem trợ giúp."
+  config-reloaded: "&a&l✓ &aĐã tải lại cấu hình FancyShop!"
+
+  # Tin nhắn trợ giúp
+  help-header: "&e&l=== Lệnh FancyShop ==="
+  help-edit: "&a/fs edit &7- Mở GUI chỉnh sửa NPC."
+  help-reload: "&a/fs reload &7- Tải lại cấu hình."
+  help-debug: "&a/fs debug <player> &7- Debug trạng thái người chơi."
+
+  # Tin nhắn lỗi
+  error-loading-npcs: "&cLỗi khi tải NPCs: {error}"
+  no-npcs-found: "&cKhông tìm thấy NPC nào!"
+  error-trade-data-not-found: "&cLỗi: Không tìm thấy dữ liệu giao dịch. Vui lòng thử lại."
+  error-trade-not-exist: "&cLỗi: Giao dịch này không còn tồn tại."
+  shop-no-trades: "&cNPC này hiện không có giao dịch nào."
+
+  # Tin nhắn Debug
+  debug-header: "&e&l=== Debug cho {player} ==="
+  debug-chat-input: "&7Chat Input: &f{value}"
+  debug-editing-npc: "&7Editing NPC: &f{value}"
+  debug-editing-trade: "&7Editing Trade ID: &f{value}"
+  debug-current-trade-npc: "&7Current Trade NPC: &f{value}"
+  debug-current-trade-id: "&7Current Trade ID: &f{value}"
+  debug-current-page: "&7Current Page: &f{value}"
+  debug-trade-type: "&7Current Trade Type: &f{value}"
+  debug-total-npcs: "&7Tổng số NPC có giao dịch: &f{value}"
+
+  # Tin nhắn trong GUI giao dịch cũ (có thể không cần nữa nhưng giữ lại)
+  trade-tracker-format: "&7Trạng thái: &e{player_count} / {required_count}"
+  trade-can-afford: "&a&l✓ &aBạn có đủ"
+  trade-cannot-afford: "&c&l✗ &cBạn không có đủ"
+  trade-reward-available: "&a&l✓ &aCó thể nhận"
+  trade-reward-unavailable: "&c&l✗ &cKhông thể nhận"
+  trade-button-confirm: "&a&l✓ XÁC NHẬN"
+  trade-button-confirm-lore: "&7Nhấn để xác nhận giao dịch!"
+
+  # Tin nhắn khi thực hiện giao dịch
+  trade-insufficient-items: "&c&l✗ &cBạn không có đủ vật phẩm yêu cầu!"
+  trade-insufficient-money: "&c&l✗ &cBạn không có đủ tiền! Cần: &e{amount}"
+  trade-insufficient-points: "&c&l✗ &cBạn không có đủ điểm! Cần: &b{amount}"
+  trade-inventory-full: "&e&l⚠ &eTúi đồ đầy! Một số vật phẩm đã rơi ra đất."
+  trade-received-money: "&a&l✓ &aBạn nhận được &e{amount} &atiền!"
+  trade-received-points: "&a&l✓ &aBạn nhận được &b{amount} &ađiểm!"
+  trade-completed: "&a&l✓ &aGiao dịch thành công!"
+  trade-deleted: "&c&l✗ &cĐã xóa giao dịch!"
+
+  # Tin nhắn chỉnh sửa Tiền/Điểm
+  currency-money-title: "&6&lTiền"
+  currency-points-title: "&b&lĐiểm"
+  currency-money-amount: "&7Số tiền: &f{amount}"
+  currency-points-amount: "&7Số điểm: &f{amount}"
+  currency-cancelled: "&c&l✗ &cĐã hủy."
+  currency-negative-amount: "&c&l✗ &cSố lượng không thể âm!"
+  currency-invalid-number: "&c&l✗ &cSố không hợp lệ!"
+  currency-enter-money-amount: "&eNhập số tiền trong chat (hoặc 'cancel'):"
+  currency-enter-points-amount: "&eNhập số điểm trong chat (hoặc 'cancel'):"
+  currency-set-required-money: "&a✓ Đặt tiền yêu cầu: &f{amount}"
+  currency-set-required-points: "&a✓ Đặt điểm yêu cầu: &f{amount}"
+  currency-set-reward-money: "&a✓ Đặt tiền thưởng: &f{amount}"
+  currency-set-reward-points: "&a✓ Đặt điểm thưởng: &f{amount}"
+  currency-removed-money-requirement: "&c✗ Đã xóa yêu cầu tiền."
+  currency-removed-points-requirement: "&c✗ Đã xóa yêu cầu điểm."
+  currency-removed-money-reward: "&c✗ Đã xóa phần thưởng tiền."
+  currency-removed-points-reward: "&c✗ Đã xóa phần thưởng điểm."
+
+  # Tin nhắn hiển thị trong shop
+  shop-click-to-trade-new: "&e&l» Click để giao dịch «"
+  shop-requirements-header: "&6&lYêu cầu:"
+  shop-requirement-item: "&7- {item}"
+  shop-reward-money-title: "&e&l💰 Phần thưởng: {amount} tiền"
+  shop-reward-money-lore: "&7Bạn sẽ nhận được &e{amount} tiền"
+  shop-reward-points-title: "&b&l⭐ Phần thưởng: {amount} điểm"
+  shop-reward-points-lore: "&7Bạn sẽ nhận được &b{amount} điểm"
+  shop-reward-items-lore: "&7+ &a{count} vật phẩm khác"
+  shop-required-money-points-title: "&6&l💰⭐ Yêu cầu tiền & điểm"
+  shop-required-money-title: "&e&l💰 Cần: {amount} tiền"
+  shop-required-money-lore: "&7Cần &e{amount} tiền &7để giao dịch"
+  shop-required-points-title: "&b&l⭐ Cần: {amount} điểm"
+  shop-required-points-lore: "&7Cần &b{amount} điểm &7để giao dịch"
+  shop-item-reward: "&a&l✓ &7Phần thưởng vật phẩm"
+
+  # Tin nhắn lưu giao dịch
+  trade-saved: "&a&l✓ &aĐã lưu giao dịch thành công!"
+  trade-info-header: "&e&lThông tin giao dịch:"
+  trade-info-npc-id: "&7- NPC ID: &f{npc_id}"
+  trade-info-trade-id: "&7- Trade ID: &f{trade_id}"
+  trade-info-required-money: "&7- Tiền yêu cầu: &f{amount}"
+  trade-info-required-points: "&7- Điểm yêu cầu: &f{amount}"
+  trade-info-reward-money: "&7- Tiền thưởng: &f{amount}"
+  trade-info-reward-points: "&7- Điểm thưởng: &f{amount}"
+  trade-info-required-items: "&7- Vật phẩm yêu cầu: &f{count}"
+  trade-info-reward-items: "&7- Vật phẩm thưởng: &f{count}"
+  shop-player-money: "&6Tiền: &f{amount}"
+  shop-player-points: "&bĐiểm: &f{amount}"
+  shop-extra-reward-money: "&7+ &e{amount} Tiền"
+  shop-extra-reward-points: "&7+ &b{amount} Điểm"
+  shop-extra-reward-items: "&7+ &a{count} vật phẩm khác"
+
+  # Tin nhắn cho giao dịch nhanh (Shift-Click)
+  trade-completed-multiple: "&a&l✓ &aGiao dịch nhanh thành công {times} lần!"
