@@ -1,0 +1,25 @@
+name: FancyShop
+version: 2.0.0
+main: org.aryaisme.fancyshop.FancyShop
+api-version: 1.16
+author: AryaIsMe
+description: Enhanced NPC trading system with multiple trade types
+website: https://github.com/aryaisme/fancyshop
+
+depend: [Vault, FancyNpcs]
+softdepend: [PlayerPoints]
+
+commands:
+  fs:
+    description: FancyShop main command
+    usage: /fs [edit|reload|debug]
+    permission: fancyshop.admin
+    aliases: [fancyshop]
+
+permissions:
+  fancyshop.admin:
+    description: Access to FancyShop admin commands
+    default: op
+  fancyshop.use:
+    description: Use FancyShop trading
+    default: true
